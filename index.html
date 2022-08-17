@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet" />
+
+    <!-- fontAwesome -->
+    <script src="https://use.fontawesome.com/1aa1ec6bb4.js"></script>
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <!-- ************Navbar ***************** -->
+
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Hello</strong> Sale Will Begin sooon --
+        <p id="demo"></p><script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+              // Get today's date and time
+              var now = new Date().getTime();
+            
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+            
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+              // Display the result in the element with id="demo"
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+            
+              // If the count down is finished, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <div id="title" class="">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+                <a class="navbar-brand fs-1 fw-bold" href="">AryanLap's</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link  fw-bold fs-6" href="">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fw-bold fs-6" href="">Reviews</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fw-bold fs-6" href="">Compare</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fw-bold fs-6" href="">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="row hero">
+                <div class="text-heading col-lg-6">
+                    <h1 class="pt-5">Site Where You and Your's Laptop Are Together.</h1>
+                    <br>
+
+                    <div class="btn-1 btn btn-outline-dark btn-lg fw-bold  mb-5">
+                        <i class="fa fa-apple"></i> Download
+                    </div>
+                    <div class="btn-2 btn btn-outline-light btn-lg fw-bold mb-5 mx-3">
+                        <i class="fa fa-play"></i> Download
+                    </div>
+                </div>
+
+                <div class="laptop-img col-lg-6 float-lg-end">
+                    <img class="d-block mx-lg-auto img-fluid laptop "
+                        src="https://cdn-icons.flaticon.com/png/512/2888/premium/2888704.png?token=exp=1660583947~hmac=c0a9c26c89c78abfcc198cdeb8cc6321"
+                        alt="Laptop " />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--********************** section ************* -->
+    <div id="section-second">
+        <div class="row">
+            <div class="feature-box col-lg-4">
+                <div class="icon"><img
+                        src="https://cdn-icons.flaticon.com/png/128/3395/premium/3395949.png?token=exp=1660461949~hmac=584dbeb8bcd49dcd512f6eb759e76d8b"
+                        alt=""></div>
+                <h3>Best site <br> award</h3>
+
+                <p>We won the award, so you can trust.</p>
+
+            </div>
+            <div class="feature-box col-lg-4">
+                <div class="icon"><img
+                        src="https://cdn-icons.flaticon.com/png/128/3114/premium/3114633.png?token=exp=1660462001~hmac=6875933fae4be4ae85e68fa425deb3e9"
+                        alt=""></div>
+                <h3>Guaranteed Products</h3>
+                <p>More than a million people enjoying their products.</p>
+
+            </div>
+            <div class="feature-box col-lg-4">
+                <div class="icon"><img src="https://cdn-icons-png.flaticon.com/128/709/709510.png" alt=""><i
+                        class="fa-solid fa-check-double"></i></div>
+
+                <h3>Verified Products</h3>
+                <p>With yearly warranty so that you need not to worry.</p>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    <!--******************** carousel********** -->
+
+
+    <div id="laptop-carousel" style="background-color: aliceblue;">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.pexels.com/photos/129208/pexels-photo-129208.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bGFwdG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                        class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                        class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzh8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                        class="d-block w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- ****************company************ -->
+
+
+    <div id="company">
+
+        <h1 class="fw-bold company-heading ">Brand that we provide</h1>
+        <br>
+
+        <div class="row company-icon">
+
+
+            <div class="company-logo col-lg-3  col-sm-6">
+                <img src="https://cdn-icons-png.flaticon.com/128/882/882647.png" alt="">
+
+
+            </div>
+            <div class="company-logo col-lg-3 col-sm-6">
+                <img src=" https://cdn-icons-png.flaticon.com/128/731/731985.png" alt="">
+
+
+            </div>
+            <div class="company-logo col-lg-3 col-sm-6">
+                <img src=" https://cdn-icons-png.flaticon.com/128/882/882624.png" alt="">
+
+
+            </div>
+            <div class="company-logo col-lg-3 col-sm-6">
+                <img src="https://cdn-icons-png.flaticon.com/128/732/732221.png" alt="">
+
+
+            </div>
+
+        </div>
+        <div class="row company-icon">
+
+
+            <div class="company-logo col-lg-3  col-sm-6">
+                <img src="https://cdn-icons-png.flaticon.com/128/882/882615.png" alt="">
+
+
+            </div>
+            <div class="company-logo col-lg-3 col-sm-6">
+                <img src="https://cdn-icons-png.flaticon.com/128/5969/5969002.png" alt="">
+
+
+            </div>
+            <div class="company-logo col-lg-3 col-sm-6">
+                <img src="https://cdn-icons-png.flaticon.com/128/5969/5969116.png" alt="">
+
+
+            </div>
+            <div class="company-logo col-lg-3 col-sm-6">
+                <img src="https://cdn-icons-png.flaticon.com/128/882/882646.png" alt="">
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <!-- ************** testimonial************** -->
+
+
+
+    <div id="carouselExampleControls" class="carousel slide testimonial" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner testimonial-text">
+          <div class="carousel-item active">
+            <h1 class="fw-bold">The best site I have seen in my <br> journey for providing best laptops</h1><br> 
+            <img src="" alt="">  <h3>Alex Hunter</h3>
+          </div>
+          <div class="carousel-item">
+            <h1  class="fw-bold">I have purchased a laptop a year ago and <br> they are providing best after-sale services</h1>
+            <br> <img src="" alt="">   <h3>Shashank Singh</h3>
+          </div>
+          <div class="carousel-item">
+            <h1 class="fw-bold">As I am also a business man I also have a company but  this one is the best</h1>
+            <br> <img src="" alt=""> <h3>Amit Kumar</h3>
+          </div>
+        </div>
+        
+      </div>
+
+
+
+
+
+    <!--************* footer *************** -->
+
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Aryan<span>Lap's</span></h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+
+                <a href="#">Blog</a>
+
+                <a href="#">Pricing</a>
+
+                <a href="#">About</a>
+
+                <a href="#">Faq</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">AryanLap's © 2022</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Dayalbagh, Near Mountain-view</span>  Agra , India</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>8630412121</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">support@company.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                The company was established in 2012 and has won many reward including the best website reward. It is an
+                online purchasing laptop shop.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
